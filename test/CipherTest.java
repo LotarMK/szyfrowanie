@@ -35,4 +35,16 @@ class CipherTest {
         Assertions.assertEquals("ABC", cipher.encrypt("XYZ"));
     }
 
+    @Test
+    public void encryptCustomAlpha() {
+        cipher = new Cipher("ABCDEF");
+        Assertions.assertEquals("", cipher.encrypt("EFG"));
+    }
+
+    @Test
+    public void decryptCustomAlpha() {
+        cipher = new Cipher("ABCDEF");
+        Assertions.assertEquals("", cipher.decrypt("EFG"));
+    }
+
 }
