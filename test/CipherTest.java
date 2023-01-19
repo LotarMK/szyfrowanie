@@ -46,5 +46,4 @@ class CipherTest {
         cipher = new Cipher("ABCDEF");
         Assertions.assertEquals("", cipher.decrypt("EFG"));
     }
-
 }
